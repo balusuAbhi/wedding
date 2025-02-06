@@ -13,10 +13,10 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url(../assets/home-bg2.avif);
-    background-position: top center;
+    background-image: url(../assets/wedding-bg.jpeg);
+    background-position: bottom;
     background-size: cover;
-    filter: brightness(30%);
+    filter: brightness(25%);
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
