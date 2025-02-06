@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&display=swap');
+.inner-sec-two{
+    position: relative;
+}
+.bg-container{
+    width: 100%;
+}
+.bg-container img{
+    width: 100%;
+}
+.invitation-data{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 13% 12%;
+    text-align: center;
+    color: #ffffff;
+}
+.invite-name{
+    font-family: "permanent marker", serif;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+    background: -webkit-linear-gradient(#bd9204 50%, #fafafa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.invite-p{
+    font-family: "Caveat", serif;
+    font-size: 23px;
+    font-weight: 700;
+    font-style: italic; 
+    margin-top: 10px;
+}
+.date-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.date-holder p{
+    font-family: "Caveat", serif; 
+    font-style: italic; 
+    font-size: 22px;
+    font-weight: 600;
+}
+.date-holder p:nth-last-of-type(1){
+    font-weight: 700;
+    font-size: 24px;
+    background: -webkit-linear-gradient(#bd9204 50%, #fafafa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
