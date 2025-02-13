@@ -63,7 +63,7 @@
   height: 300px;
 }
 .sepstyle {
-  background: -webkit-linear-gradient(#bd9204 50%, #285f96);
+  background: -webkit-linear-gradient(#bd9204 50%, #fff);
   text-align: center;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
