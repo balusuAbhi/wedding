@@ -26,7 +26,9 @@
   font-style: italic;
   background: -webkit-linear-gradient(#bd9204 50%, #fafafa);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 .invite-p {
   font-family: "Caveat", serif;
@@ -53,6 +55,7 @@
   font-size: 24px;
   background: -webkit-linear-gradient(#bd9204 50%, #fafafa);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .carousel-container {
@@ -68,12 +71,26 @@
 .sepstyle {
   background: -webkit-linear-gradient(#bd9204 50%, #fff);
   text-align: center;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "permanent marker", serif;
+}
+.wed-name {
+  background: -webkit-linear-gradient(#fff 50%, #fff);
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "permanent marker", serif;
+  padding: 0 10px;
 }
 .name-container {
   padding: 20px 16px;
   position: relative;
+}
+.pad-tb {
+  padding: 20px 0px;
 }
 .name-container::before {
   position: absolute;
@@ -90,8 +107,9 @@
   z-index: -1;
 }
 .each-name img {
-  width: 200px;
-  object-fit: contain;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 .each-name {
   padding-top: 30px;
@@ -115,4 +133,105 @@
   height: 280px;
   max-width: 180px;
   min-width: 180px;
+}
+.carousel-container .item {
+  height: 253px;
+  overflow: hidden;
+}
+.carousel-container .item img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.name-container {
+  border-bottom: 1px solid #bd9204;
+}
+.function-holder {
+  position: relative;
+}
+.function-holder::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../assets/name-bg2.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  z-index: -1;
+  filter: brightness(40%);
+}
+.underline {
+  font-size: 28px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  background: -webkit-linear-gradient(#071b37 60%, #071b37);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "permanent marker", serif;
+}
+
+.event-one {
+  padding: 0 16px;
+  position: relative;
+}
+.event-des {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #bd9204;
+  border-radius: 5px;
+  position: relative;
+}
+.border-img{
+  position: absolute;
+  right: 5px;
+  top: -65px;
+  width: 100px;
+  z-index: 9999;
+  transform: rotate(247deg);
+}
+.event-head {
+  font-size: 24px;
+  padding-top: 10px;
+  font-weight: 400;
+  background: -webkit-linear-gradient(#bd9204 50%, #bd9204);
+  text-align: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "permanent marker", serif;
+}
+.event-date {
+  font-family: "Caveat", serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 12px;
+  text-align: center;
+  color: #fff;
+}
+.event-date span{
+  font-family: "Caveat", serif;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 12px;
+  text-align: center;
+  color: #071b37;
+}
+.event-location {
+  background-color: #bd9204;
+  padding: 13px;
+  display: block;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.event-title{
+  margin-top: 60px !important;
+ text-align: left !important;
+ padding:0 16px 10px;
 }
