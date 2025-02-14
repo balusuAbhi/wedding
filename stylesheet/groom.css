@@ -56,7 +56,10 @@
   -webkit-text-fill-color: transparent;
 }
 .carousel-container {
-  margin-top: -5px;
+  margin-top: -4px;
+  border: 1px solid #bd9204;
+  border-left: none;
+  border-right: none;
 }
 .each-name > img {
   width: 200px;
@@ -68,46 +71,48 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.name-container{
-    padding: 20px 16px;
-   position: relative;
+.name-container {
+  padding: 20px 16px;
+  position: relative;
 }
-.name-container::before{
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    filter: brightness(50%);
-    background-image: url(../assets/name-bg2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    content: '';
-    z-index: -1;
+.name-container::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  filter: brightness(50%);
+  background-image: url(../assets/name-bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  z-index: -1;
 }
-.each-name img{
-    width: 200px;
-    object-fit: contain;
+.each-name img {
+  width: 200px;
+  object-fit: contain;
 }
-.each-name{
-    padding-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.each-name {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.each-name p{
-    font-family: "Caveat", serif;
-    font-size: 23px;
-    font-weight: 700;
-    font-style: italic;
-    text-align: center;
-    color: #fff;
+.each-name p {
+  font-family: "Caveat", serif;
+  font-size: 23px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
 }
-.ind-img{
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid #bd9204;
-    height: 300px;
+.ind-img {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #bd9204;
+  height: 280px;
+  max-width: 180px;
+  min-width: 180px;
 }
