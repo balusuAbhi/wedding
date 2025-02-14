@@ -23,9 +23,9 @@
   </head>
   <body>
     <section class="main-body">
-      <div class="audio-body" onclick="handleclick()">
+      <div class="audio-body">
         <div class="audio-holder">
-          <audio loop>
+          <audio loop playsinline>
             <source src="./assets/krishna-krishna.mp3" type="audio/ogg" />
           </audio>
         </div>
@@ -95,7 +95,7 @@
       </div>
       <div class="inner-invite">
         <h2 class="invite-name">Invitation</h2>
-        <p class="invite-p ">
+        <p class="invite-p">
           Request your gracious presence with family and solicit your blessings
           on the auspicious occasion of our wedding.
         </p>
@@ -188,15 +188,19 @@
     <script>
       let audio = document.querySelector(".audio-holder audio");
       let audioBody = document.querySelector(".audio-body");
-      function handleclick() {
+      audioBody.addEventListener("click", () => {
         if (audioBody.classList.contains("active")) {
           audio.pause();
           audioBody.classList.remove("active");
+          console.log("stopped");
         } else {
-          audio.play();
+          audio.play().catch((err) => {
+            console.log(err, "err");
+          });
           audioBody.classList.add("active");
+          console.log("playing");
         }
-      }
+      });
     </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
