@@ -261,3 +261,46 @@
   padding: 100px 0;
   font-size: 30px !important;
 }
+.audio-body {
+  position: fixed;
+  bottom: 40px;
+  right: 18px;
+  background-color: #bd9204;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 99999;
+}
+.audio-button img {
+  width: 25px;
+  height: 25px;
+}
+.audio-body.active img:nth-of-type(1),
+.audio-body img:nth-of-type(2) {
+  display: none;
+}
+.audio-body.active img:nth-of-type(2),
+.audio-body img:nth-of-type(1) {
+  display: block;
+}
+.inner-invite{
+  padding: 60px 16px;
+  position: relative;
+  border-bottom: 1px solid #bd9204;
+}
+.inner-invite::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../assets/final-bg-min.jpg);
+  background-position: center;
+  z-index: -1;
+  filter: brightness(40%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.inner-invite p{
+  color: #fff !important;
+}
