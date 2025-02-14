@@ -283,12 +283,12 @@
 .audio-body img:nth-of-type(1) {
   display: block;
 }
-.inner-invite{
+.inner-invite {
   padding: 60px 16px;
   position: relative;
   border-bottom: 1px solid #bd9204;
 }
-.inner-invite::before{
+.inner-invite::before {
   content: "";
   position: absolute;
   left: 0;
@@ -302,6 +302,18 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.inner-invite p{
+.inner-invite p {
   color: #fff !important;
+}
+.main-body p,
+.main-body h2,
+.main-body h1,
+.main-body h3 {
+  transform: translateY(50px);
+  transition: all ease-in-out .6s;
+  opacity: 0;
+}
+.main-body .addAnima {
+  transform: translateY(0px);
+  opacity: 1;
 }
