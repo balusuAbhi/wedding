@@ -23,9 +23,9 @@
   </head>
   <body>
     <section class="main-body">
-      <div class="audio-body active" onclick="handleclick()">
+      <div class="audio-body" onclick="handleclick()">
         <div class="audio-holder">
-          <audio autoplay loop>
+          <audio loop>
             <source src="./assets/krishna-krishna.mp3" type="audio/ogg" />
           </audio>
         </div>
@@ -190,10 +190,10 @@
       let audioBody = document.querySelector(".audio-body");
       function handleclick() {
         if (audioBody.classList.contains("active")) {
-          audio.muted = true;
+          audio.pause();
           audioBody.classList.remove("active");
         } else {
-          audio.muted = false;
+          audio.play();
           audioBody.classList.add("active");
         }
       }
@@ -217,7 +217,7 @@
         nav: false,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 5000,
         responsive: {
           0: {
             items: 1,
