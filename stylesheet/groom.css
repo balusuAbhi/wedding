@@ -113,6 +113,7 @@
 }
 .each-name {
   padding-top: 30px;
+  gap: 7px;
   display: flex;
   align-items: center;
   justify-content: space-between;
